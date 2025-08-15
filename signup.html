@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up & Log In</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f7dcb1;
+        }
+        .container {
+            width: 300px;
+            padding: 20px;
+            background: rgb(241, 193, 91);
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            text-align: center;
+        }
+        input {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background: blue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 id="formTitle">Sign Up</h2>
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <button onclick="handleAuth()">Submit</button>
+        <p id="toggleText">Already have an account? <a href="#" onclick="toggleForm()">Log In</a></p>
+    </div>
+
+    <script>
+        let isSignUp = true;
+
+        function toggleForm() {
+            isSignUp = !isSignUp;
+            document.getElementById("formTitle").innerText = isSignUp ? "Sign Up" : "Log In";
+            document.getElementById("toggleText").innerHTML = isSignUp ? 
+                'Already have an account? <a href="#" onclick="toggleForm()">Log In</a>' : 
+                'Don\'t have an account? <a href="#" onclick="toggleForm()">Sign Up</a>';
+        }
+
+        function handleAuth() {
+            let username = document.getElementById("username").value;
+            let password = document.getElementById("password").value;
+            
+            if (username === "" || password === "") {
+                alert("Please fill all fields");
+                return;
+            }
+            
+            if (isSignUp) {
+                localStorage.setItem("username", username);
+                localStorage.setItem("password", password);
+                alert("Sign up successful! Now log in.");
+                toggleForm();
+            } else {
+                let storedUsername = localStorage.getItem("username");
+                let storedPassword = localStorage.getItem("password");
+                
+                if (username === storedUsername && password === storedPassword) {
+                    alert("Login successful!");
+                    window.location.href = "index.html";
+                } else {
+                    alert("Invalid credentials");
+                }
+            }
+        }
+    </script>
+</body>
+</html>

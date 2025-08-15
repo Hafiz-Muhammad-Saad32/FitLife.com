@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/bd9fd7b14d.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   <style>
+    body{
+        margin: 0%;
+        padding: 0%;
+        font-family:"Times New Roman", Times, serif;
+        background-color: rgb(247, 238, 224);
+        font-size: 20px;
+    }
+    a{
+        text-decoration: none;
+        color: rgb(4, 4, 5);
+    }
+    .main-h{
+        text-align: center;
+        font-size: 50px;
+        padding: 10px;
+      
+  }
+    .section-A{
+        padding: 20px 100px 10px 100px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .cards{
+        display: flex;
+    }
+    .cards img{
+          width: 50%;
+    }
+    .card-body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 20px;
+     }
+     
+
+
+    footer{
+        margin-top: 20px;
+        padding: 10px;
+        background-color: rgb(255, 196, 32);
+        color: rgb(0, 0, 0);
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+      .section-E{
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+      }
+      .join{
+        line-height: 5px;
+      }
+      .links{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+     /* media quries for tablet */
+     @media(max-width:768px){
+      .cards{
+        flex-direction: column;
+     }
+     #cards{
+       flex-direction: column-reverse;
+     }
+     .cards img{
+       width: 100%;
+     }
+        .section-E{
+            flex-direction: column;
+            justify-content: center;
+          }
+          .email input{
+            width: 500px;
+          }
+        
+        }
+    
+        /* media quries for mobiles */
+    @media(max-width:427px){
+      .section-A{
+        padding: 20px 20px 10px 20px ;
+      }
+      .card-body{
+        margin: 0%;
+      }
+        .section-E{
+            padding:20px ;
+          }
+          .join{
+            line-height: 25px;
+          }
+          .email input{
+            width: 230px;
+          }
+        }
+    @media(max-width:321px){
+          .email input{
+            width: 130px;
+          }
+        }
+    </style>
+</head>
+<body>
+                    <!--nave bar  -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning w-100">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="https://fitlifehubca.wordpress.com/wp-content/uploads/2023/08/goldy-logo-2.png" width="60px"height="60px" alt="logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"><h5><b>Home</b></h5></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="workout.html"><h5>Workouts</h5></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="nutrition.html"><h5>Nutrition</h5></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="about.html"><h5>About</h5></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="contact.html"><h5>Contact Us</h5></a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <a href="SignUp.html" class="btn btn-outline-success text-dark"><b>Signup/Login</b></a>
+            </form>
+          </div>
+        </div>
+    </nav>
+    <!-- Main headings --> 
+    <h1 class="main-h"><b>FIT LIFE HUB</b></h1>
+    <div class="main-h"><img  src="https://fitlifehubca.files.wordpress.com/2023/08/goldy-logo-2.png" style="align-items:center;width:300px;" alt=""></div>
+    <h1 class="text-center">Nutrition guidance</h1>
+    <p class="text-center">August 8, 2023</p>
+
+    <div class="section-A">
+      <div class="cards">
+        <img src="https://fitlifehubca.wordpress.com/wp-content/uploads/2023/08/fitlifehub10.png"  alt="">
+        <div class="card-body">
+          <h2><b>Age Group: 15 to 25</b></h2> 
+          <p>During this phase of life, proper nutrition is crucial for growth, development, and overall well-being. Young adults need a balanced diet that provides essential nutrients for their active lifestyles.</p>  
+          <h4><b>Stay Hydrated: </b></h4>
+          <p>Drink plenty of water to support bodily functions and stay energize.</p>
+          <h4><b>Balanced Diet: </b></h4>
+        <p>Consume a variety of nutrient-dense foods, including fruits, vegetables, whole grains, lean proteins, and healthy fats</p>
+        </div>
+      </div>
+      <div>
+        <h4><b>Protein Intake: </b></h4>
+        <p>Ensure adequate protein intake for muscle development and repair. Sources include lean meats, poultry, fish, beans, legumes, tofu, and dairy</p>
+        <h4><b>Calcium and Vitamin D: </b></h4>
+        <p>Strengthen bones with calcium-rich foods like dairy products, leafy greens, and fortified plant-based milk. Combine it with vitamin D from sunlight or supplements to enhance calcium absorption.</p>
+      
+        <h4><b>Limit Processed Foods and Sugars:</b></h4>
+        <p> Minimize the intake of processed and sugary foods, as they can negatively impact health and energy levels.</p>
+      
+        <h4><b>Snack Smartly: </b></h4>
+        <p>opt for nutritious snacks like fruits, nuts, yogurt, or whole-grain crackers instead of sugary or high-calorie options.</p>
+      
+        
+      </div>
+      <div class="cards" id="cards">
+        <div class="card-body">
+          <h2><b>Age Group: 26 to 35</b></h2> 
+          <p>During this age range, maintaining a balanced diet becomes even more important for overall health and disease prevention.</p>  
+          <h4><b>Diverse Nutrients:</b></h4>
+          <p>Consume a wide range of foods to obtain diverse nutrients that support immune function and energy levels.</p>
+          <h4><b>Diverse Nutrients:</b></h4>
+          <p> Consume a wide range of foods to obtain diverse nutrients that support immune function and energy levels. </p> 
+        </div>
+        <img src="https://fitlifehubca.wordpress.com/wp-content/uploads/2023/08/fitlifehub11.png" alt="">
+      </div>
+      <div>
+        
+        <h4><b> Healthy Fats:</b></h4>
+        <p>Incorporate healthy fats from sources like avocados, nuts, seeds, olive oil, and fatty fish for heart health and brain function.</p>
+        <h4><b>Nutrition Guidance: </b></h4>
+        <p> Get valuable insights into nutrition and dietary choices. Learn about essential nutrients, portion control, mindful eating, and ways to incorporate more fruits, vegetables, and whole foods into your diet. We also provide information on special dietary considerations, such as vegetarianism, veganism, and gluten-free diets. </p>
+        <h4><b>Iron-Rich Foods: </b></h4>
+        <p>Pay attention to iron intake, especially for women, to prevent iron deficiency anemia. Sources include lean red meat, poultry, beans, and leafy greens.</p>
+        <h4><b>Limit Sodium: </b></h4>
+        <p>Reduce sodium intake to promote heart health and lower the risk of hypertension.</p>
+      </div>
+      <div class="cards">
+        <img src="https://fitlifehubca.wordpress.com/wp-content/uploads/2023/08/fitlifehub12.png" height="" alt="">
+        <div class="card-body">
+          <h2><b>Age Group: 36 to 50</b></h2> 
+          <p>During these years, the focus shifts to maintaining energy levels, supporting metabolism, and reducing the risk of chronic health conditions.</p>  
+          <h4><b>Fiber Intake:  </b></h4>
+          <p> Ensure sufficient fiber intake from whole grains, fruits, vegetables, and legumes to support digestive health and manage weight.</p>
+        </div>
+      </div><div>
+        <h4><b>Fiber Intake:</b></h4> Ensure sufficient fiber intake from whole grains, fruits, vegetables, and legumes to support digestive health and manage weight.
+        <p> Consume a wide range of foods to obtain diverse nutrients that support immune function and energy levels. </p>
+        <h4><b> Antioxidant-Rich Foods: </b></h4>
+        <p>Consume antioxidant-rich foods like berries, citrus fruits, and colorful vegetables to combat oxidative stress and support cellular health.</p>
+        <h4><b>Omega-3 Fatty Acids: </b></h4>
+        <p> Include sources of omega-3 fatty acids like fatty fish (salmon, mackerel, sardines) and chia seeds to support heart health and reduce inflammation. </p>
+     </div>
+     <div class="cards" id="cards">
+      <div class="card-body">
+        <h2><b>Age Group: 50 to 70</b></h2> 
+        <p>During these years, nutrition plays a vital role in supporting bone health, cognitive function, and managing age-related health concerns.</p>  
+        <h4><b>Calcium and Vitamin D: </b></h4>
+        <p>Continue focusing on calcium and vitamin D intake to maintain bone health and reduce the risk of osteoporosis.</p>
+        <h4><b>B Vitamins: </b></h4>
+        <p>Ensure sufficient B vitamins from whole grains, leafy greens, and fortified foods to support brain health and energy levels.</p>
+      </div>
+      <img src="https://fitlifehubca.wordpress.com/wp-content/uploads/2023/08/fitlifehub13.png" alt="">
+    </div>
+    <div>
+      <h4><b>Hydration:</b></h4>
+      <p> Stay adequately hydrated to support joint health and overall bodily functions.</p>
+      <h4><b>Lean Protein:</b></h4>
+      <p> Consume lean protein to preserve muscle mass and support muscle function, which becomes more important with age.</p>
+      <h4><b>Manage Portion Sizes: </b></h4>
+      <p>Be mindful of portion sizes to avoid excessive calorie intake and manage weight.</p>
+    </div>
+    </div>
+
+
+    <!-- footer -->
+    <footer>
+        <div class="section-E">
+          <div class="join">
+            <h2>Join the Fit life hub</h2>
+            <p>Stay updated with our latest recipes and other news by joining our newsletter.</p>
+          </div>
+          <div class="email">
+            <input type="email" placeholder="Type Your email...">
+            <a href="contact.html"><button type="button" class="btn btn-outline-dark">Subscribe</button></a>
+          </div>
+        </div>
+        <div>
+          <h3>For More Informrmation, Click Here!</h3>
+          <div class="links p-3">
+            <i class="fa-brands fa-facebook text-primary fs-4 pe-3"></i>
+            <i class="fa-brands fa-square-whatsapp text-success fs-4 pe-3"></i>
+            <i class="fa-brands fa-square-instagram text-danger fs-4 pe-3"></i>
+            <i class="fa-brands fa-twitter text-primary fs-4 pe-3"></i>
+          </div> 
+        <div class="links">
+            <a href="workout.html"><button type="button" class="btn btn-outline-dark">Workouts</button></a>
+            <a href="nutrition.html"><button type="button" class="btn btn-outline-dark">Nutrition</button></a>
+            <a href="about.html"><button type="button" class="btn btn-outline-dark">About</button></a>
+            <a href="contact.html"><button type="button" class="btn btn-outline-dark">Contact Us</button></a>
+        </div>
+        </div>
+      </footer>
+  
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>

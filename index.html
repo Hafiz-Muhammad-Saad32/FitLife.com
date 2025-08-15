@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/bd9fd7b14d.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   <style>
+    body{
+        margin: 0%;
+        padding: 0%;
+        font-family:"Times New Roman", Times, serif;
+        background-color: rgb(247, 238, 224);
+        font-size: 20px;
+    }
+    .main-h{
+        text-align: center;
+        font-size: 50px;
+        padding: 10px;
+      
+    }
+    .sub-h-1{
+        text-align: center;
+    }
+    .img-1{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+    .section-A{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #mar{
+        margin-left:200px;
+        margin-right: 200px;
+    }
+    a{
+      text-decoration: none;
+      color: rgb(4, 4, 5);
+    }
+    a:hover{
+      color: rgb(250, 193, 37);
+    }
+    .section-B{
+     margin: 30px 100px 0px 100px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    }
+    .section-C{
+      margin:0px 100px 0px 100px;
+    }
+    .cards{
+      display: flex;
+    }
+    .cards img{
+        width: 50%;
+    }
+    .card-body{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 20px;
+    }
+    .section-D{
+      margin: 20px 250px 20px 250px ;
+    }
+    
+    footer{
+      margin-top: 20px;
+      padding: 10px;
+      background-color: rgb(255, 196, 32);
+      color: rgb(0, 0, 0);
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .section-E{
+      display: flex;
+      justify-content:space-around;
+      align-items: center;
+      gap: 20px;
+    }
+    .join{
+      line-height: 5px;
+    }
+    .links{
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+     /* media quries for tablet */
+    @media(max-width:768px){
+      .section-B ,.section-C{
+        margin:10px 30px 10px 30px ;
+      }
+      .section-A img{
+        width: 650px;
+      }
+      #mar{
+        margin-left:10px;
+        margin-right: 10px;
+      }
+      .cards{
+         flex-direction: column;
+      }
+      #cards{
+        flex-direction: column-reverse;
+      }
+      .cards img{
+        width: 100%;
+      }
+      .section-D{
+        margin: 20px 100px 20px 100px ;
+      }
+      .section-E{
+        flex-direction: column;
+        justify-content: center;
+      }
+      .email input{
+        width: 500px;
+      }
+    
+    }
+
+    /* media quries for mobiles */
+    @media(max-width:427px){
+      .section-A{
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      .section-A img{
+        width: 300px;
+      }
+      .section-A .main-h{
+         font-size: 40px;
+      }
+      .section-B{
+        margin: 0px 20px 0px 20px;
+      }
+      .card-body{
+        margin: 0%;
+      }
+      .section-D{
+        margin: 20px 30px 20px 30px ;
+      }
+      .section-E{
+        padding:20px ;
+      }
+      .join{
+        line-height: 25px;
+      }
+      .email input{
+        width: 230px;
+      }
+      .p-3{
+        display: flex;
+        gap: 10px;
+      }
+    }
+    @media(max-width:321px){
+      .email input{
+        width: 130px;
+      }
+    }
+   </style>
+</head>
+<body>
+                    <!--nave bar  -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning w-100">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="https://fitlifehubca.wordpress.com/wp-content/uploads/2023/08/goldy-logo-2.png" width="60px"height="60px" alt="logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"><h5><b>Home</b></h5></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="workout.html"><h5>Workouts</h5></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="nutrition.html"><h5>Nutrition</h5></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="about.html"><h5>About</h5></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="contact.html"><h5>Contact Us</h5></a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+               <a href="SignUp.html" class="btn btn-outline-success text-dark"><b>Signup/Login</b></a>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Main headings -->           
+    <h1 class="main-h"><b>FIT LIFE HUB</b></h1>
+    <div class="main-h"><img  src="https://fitlifehubca.files.wordpress.com/2023/08/goldy-logo-2.png" style="align-items:center;width:300px;" alt=""></div>
+    <h2 class="sub-h-1">Welcome to<b> Fit Life Hub</b> Your Ultimate FitnessDestination Get in shape, stay healthy, and unlock yourpotential with us. “Explore Our Programs“</h2>
+   
+    <!-- section-A -->
+    <div class="section-A">
+        <div class="img-1">
+            <img  src="https://fitlifehubca.wordpress.com/wp-content/uploads/2023/08/fitlifehub26.png" width="900px" alt="">
+        </div>
+        <h4>Fall in love with the process, and the results will come.</h4>
+        <div>
+            <h1 class="main-h">FIT LIFE HUB WORKOUT & PLAN</h1>
+            <ul>
+                <li>200+ Clubs Mind Den & Sauna</li>
+                <li>Fitness Classes REGIMEN</li>
+                <li>Personal Training On-Demand Workouts</li>
+                <li>Premium Equipment and much more</li>
+            </ul>
+        </div>
+        <div id="mar">
+          <p >Step into our immersive studios and feel invigorated for every workout. Our strong communities and high-energy instructors will bring you more motivation than you could ever find at home, and it’s all included with your membership..</p>
+          <a href="workout.html">EXPLORE MORE</a>
+        </div>
+        <img src="https://fitlifehubca.wordpress.com/wp-content/uploads/2023/07/moves-correct-form_feat1.webp"alt="">
+    </div>
+
+    <!-- section-B -->
+    <div class=" section-B">
+      <div>
+        <h5>TRAINING PROGRAMS</h5>
+        <h5>Got goals? We’ll help you reach them. Whether it’s Personal, Team or Performance Training, our certified instructors are here to help you succeed.</h5>
+      </div>
+      <h1>YOUR NEW PATH IS OUR MISSION​</h1> 
+      <h1>Comprehensive Resources</h1>
+      <p>Get moving with our downloadable training programs, which includes cardio, conditioning and strength training exercises. Go at your own pace with these easy-to-follow workout program.</p>
+    </div>
+
+    <!-- section-C Crads-->
+    <div class="section-C">
+      <div class="cards">
+        <img src="https://fitlifehubca.wordpress.com/wp-content/uploads/2023/08/fitlifehub29-1.png" alt="">
+        <div class="card-body">
+          <h2><b>JOIN THE FIT LIFE HUB TEAM</b></h2> 
+          <p>From Associates to Personal Trainers, our team believes that fitness can transform lives. Ready to change your life and the lives of our Members? Join us!</p>  
+        </div>
+      </div>
+      <div class="cards" id="cards">
+        <div class="card-body">
+          <h2><b>FIT Life HUB Kids Foundation</b></h2> 
+          <p>Fit Life Hub Kids Foundation is a registered charity with a vision for kids with special needs to have equal opportunities to experience the joys and benefits of being active. To date, we’ve impacted the lives of over 1000,000 Canadian kids through physical activity opportunities!</p>  
+        </div>
+        <img src="https://fitlifehubca.wordpress.com/wp-content/uploads/2023/08/fitlifehub30-1.png" alt="">
+      </div>
+      <div class="cards">
+        <img src="https://fitlifehubca.wordpress.com/wp-content/uploads/2023/08/fitlifehub31.png" alt="">
+        <div class="card-body">
+          <h2><b>All Fit life hub members can enjoy unlimited access to virtual workouts and</b>VELOCYCLE.</h2>
+           <a href="about.html"><h4>Success Stories </h4></a>
+        </div>
+      </div>
+    </div>
+    <!-- section D : carousel -->
+    <div class=" section-D">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" style="display: flex;justify-content:center;align-items:center;width:100%;">
+          <img src="https://fitlifehubca.wordpress.com/wp-content/uploads/2023/07/pexels-andrea-piacquadio-866021.jpg?w=2048" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://fitlifehubca.wordpress.com/wp-content/uploads/2023/07/pexels-andrea-piacquadio-3755826.jpg?w=2046" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src=" https://fitlifehubca.wordpress.com/wp-content/uploads/2023/07/pexels-sabel-blanco-1480520.jpg?w=2046" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://fitlifehubca.wordpress.com/wp-content/uploads/2023/07/pexels-the-lazy-artist-gallery-2247179-1.jpg?w=2048" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://fitlifehubca.wordpress.com/wp-content/uploads/2023/07/pexels-andrea-piacquadio-3757377.jpg?w=2046" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://fitlifehubca.wordpress.com/wp-content/uploads/2023/07/pexels-nathan-cowley-1199607.jpg?w=2046" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://fitlifehubca.wordpress.com/wp-content/uploads/2023/07/pexels-andrea-piacquadio-903171.jpg?w=2046" class="d-block w-100" alt="...">
+        </div>       
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+      <div class="section-E">
+        <div class="join">
+          <h2>Join the Fit life hub</h2>
+          <p>Stay updated with our latest recipes and other news by joining our newsletter.</p>
+        </div>
+        <div class="email">
+          <input type="email" placeholder="Type Your email...">
+          <a href="contact.html"><button type="button" class="btn btn-outline-dark">Subscribe</button></a>
+        </div>
+      </div>
+      <div>
+        <h3>For More Informrmation, Click Here!</h3>
+        <div class="links p-3">
+          <i class="fa-brands fa-facebook text-primary fs-4 pe-3"></i>
+          <i class="fa-brands fa-square-whatsapp text-success fs-4 pe-3"></i>
+          <i class="fa-brands fa-square-instagram text-danger fs-4 pe-3"></i>
+          <i class="fa-brands fa-twitter text-primary fs-4 pe-3"></i>
+        </div> 
+      <div class="links">
+        <a href="workout.html"><button type="button" class="btn btn-outline-dark">Workouts</button></a>
+        <a href="nutrition.html"><button type="button" class="btn btn-outline-dark">Nutrition</button></a>
+        <a href="about.html"><button type="button" class="btn btn-outline-dark">About</button></a>
+        <a href="contact.html"><button type="button" class="btn btn-outline-dark">Contact Us</button></a>
+      </div>
+      <p style="text-align: center;">© Since 2016-2024 <b>Fit Life Hub</b>. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>

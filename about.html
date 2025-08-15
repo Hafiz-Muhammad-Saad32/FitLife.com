@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/bd9fd7b14d.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   <style>
+    body{
+        margin: 0%;
+        padding: 0%;
+        font-family:"Times New Roman", Times, serif;
+        background-color: rgb(247, 238, 224);
+        font-size: 20px;
+    }
+    .main-h{
+      text-align: center;
+      font-size: 50px;
+      padding: 10px;
+    
+    }
+    .section-A{
+      padding: 20px 100px 10px 100px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .cards{
+      display: flex;
+    }
+    .cards img{
+        width: 50%;
+    }
+    .card-body{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 20px;
+    }
+    a{
+      text-decoration: none;
+    }
+    #p{
+      margin-left: 50px;
+    }
+    
+    
+
+
+
+    footer{
+        margin: 20px 0px 0px 0px;
+        padding: 10px;
+        background-color: rgb(255, 196, 32);
+        color: rgb(0, 0, 0);
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+      .section-E{
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+      }
+      .join{
+        line-height: 5px;
+      }
+      .links{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+      }  
+     /* media quries for tablet */
+     @media(max-width:768px){
+        .section-A{
+          padding: 20px 50px 10px 50px ;
+        }
+        .cards{
+          flex-direction: column;
+       }
+       #cards{
+         flex-direction: column-reverse;
+       }
+       .cards img{
+         width: 100%;
+       }
+       .section-E{
+        flex-direction: column;
+        justify-content: center;
+      }
+      .email input{
+          width: 500px;
+      }
+        
+        
+        }
+    
+        /* media quries for mobiles */
+    @media(max-width:427px){
+      .section-A{
+        padding: 20px 20px 10px 20px ;
+      }
+        .section-E{
+            padding:20px ;
+        }
+        .join{
+            line-height: 25px;
+        }
+        .email input{
+            width: 230px;
+        }
+        .card-body{
+            margin: 0%;
+        }  
+    }
+    @media(max-width:321px){
+          .email input{
+            width: 130px;
+          }
+        }
+    </style>
+</head>
+<body>
+                    <!--nave bar  -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning w-100">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="https://fitlifehubca.wordpress.com/wp-content/uploads/2023/08/goldy-logo-2.png" width="60px"height="60px" alt="logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"><h5><b>Home</b></h5></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="workout.html"><h5>Workouts</h5></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="nutrition.html"><h5>Nutrition</h5></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="about.html"><h5>About</h5></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="contact.html"><h5>Contact Us</h5></a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <a href="SignUp.html" class="btn btn-outline-success text-dark"><b>Signup/Login</b></a>
+            </form>
+          </div>
+        </div>
+    </nav>
+    <!-- Main headings -->           
+    <h1 class="main-h"><b>FIT LIFE HUB</b></h1>
+    <div class="main-h"><img  src="https://fitlifehubca.files.wordpress.com/2023/08/goldy-logo-2.png" style="align-items:center;width:300px;" alt=""></div>
+    <h1 class="text-center">About Us</h1>
+    <p class="text-center">August 9, 2023</p>
+
+    <div class="section-A"id="section-A">
+      <h1>VISION: From “Self-Awakening” to Global Peace</h1>
+      <p>Join the Fit Life Hub Community …</p>
+      <div class="cards">
+        <img src="https://fitlifehubca.wordpress.com/wp-content/uploads/2023/08/fitlifehub1.png" alt="">
+        <div class="card-body">
+          <h4><b>Welcome to FitLifeHub…!</b></h4> 
+          <p>At FitLifeHub, we are passionate about promoting fitness, health, and overall well-being. Our mission is to provide you with the tools, knowledge, and inspiration to live a fit and active lifestyle. Whether you’re a fitness enthusiast, a beginner looking to kickstart your journey, or someone seeking guidance on improving their overall wellness, we are here to support you every step of the way.</p>  
+        </div>
+      </div>
+      <br>
+      <p>We are a dedicated team of fitness professionals, nutritionists, and wellness enthusiasts who believe in the transformative power of a healthy lifestyle. Our collective expertise and diverse backgrounds allow us to offer a comprehensive approach to fitness that addresses all aspects of well-being – from physical strength and endurance to mental resilience and emotional balance.</p>
+      <h2>MISSION:</h2>
+      <p>Help each individual experience inner peace and live their fullest self through the technique for Self-Realization.</p>
+      <p>Our spiritual journey can begin with an external search and gradually progress to an internal quest by piercing through the layers of physical and metaphysical bodies – Physical, Breath, Mind, Wisdom and Bliss. This allows us to reach the all-encompassing light that we call the Self or Soul.</p>
+      <p>Wherever you are in your journey to the center of your Self, we have the tools and support to help you on your path.</p>
+      <div class="cards" id="cards">
+        <div class="card-body">
+          <p>Welcome visitors to Fit Life Hub, your comprehensive resource for achieving a healthy and fulfilling life. Emphasize the importance of prioritizing health and fitness in today’s fast-paced world. Mention that Fit Life Hub is here to support and guide individuals on their fitness journey.  </p>  
+          <a href="workout.html">LAERN ABOUT MORE</a>
+        </div>
+        <img src="https://fitlifehubca.wordpress.com/wp-content/uploads/2023/08/fitlifehub2.png" alt="">
+      </div>
+      <h4>Featured Services or Programs </h4>
+      <h5><b>Personalized workout plans</b></h5>
+      <h5><b>Tailored to Individual Goals and Abilities:</b></h5>
+      <p id="p"> Personalized workout plans are designed to align with each individual’s unique goals, abilities, and fitness level. </p>
+      <h5><b>Progression and Adaptation: </b></h5>
+      <p id="p">Personalized workout plans are designed to evolve and progress over time. </p>
+      <h5><b>Expert Guidance and Support:</b></h5>
+      <p id="p">Personalized workout plans often come with the guidance and support of a fitness professional </p>
+      <h2>Featured Services or Programs </h2>
+      <div class="cards" id="cards">
+        <img src="https://fitlifehubca.wordpress.com/wp-content/uploads/2023/08/fitlifehub3.png" alt="">
+        <div class="card-body">
+          <h4><b>Customized Meal Plans:</b></h4> 
+          <p>Nutritional guidance involves creating personalized meal plans tailored to an individual’s specific goals, dietary preferences, and any underlying health conditions.</p>  
+        </div>
+      </div>
+      <h5><b>Education on healthy eating habits:</b></h5>
+      <p id="p">Nutritional guidance goes beyond meal planning. It also involves educating individuals about the basic principles of nutrition, including micro nutrients, portion control, and conscious eating.</p>
+      <a href="nutrition.html">YOU EXPLORE MORE</a>
+      <h5><b>Develop Healthy Habits and Mindsets: </b></h5>
+      <p id="p">Wellness coaching goes beyond short-term fixes. It focuses on helping individuals develop sustainable habits and a positive mindset. </p>
+      <h2><b>Virtual fitness classes...</b></h2>
+      <div class="cards" id="cards">
+        <div class="card-body">
+          <h3><b>Recordings for Flexibility:</b></h4> 
+          <p>Many virtual fitness classes offer recorded sessions, allowing individuals to access and participate in workouts at their convenience.  </p>  
+        </div>
+        <img src="https://fitlifehubca.wordpress.com/wp-content/uploads/2023/08/fitlifehub4.png" alt="">
+      </div>
+      <h5><b>Convenience and Accessibility: </b></h5>
+      <p id="id">Virtual fitness classes offer Unique feature convenience and accessibility. Individuals can participate in workouts from the comfort of their own homes or any location with an internet connection.</p>
+      <h5><b>Community and Social Interaction:</b></h5>
+      <p id="id">Virtual fitness classes often include interactive features that allow participants to engage with the instructor and other class members.</p>
+      <div class="cards">
+        <img src="https://fitlifehubca.wordpress.com/wp-content/uploads/2023/08/fitlifehub5.png" alt="">
+        <div class="card-body">
+          <h4><b>Expert Advice </b></h4> 
+          <ul>
+            <li>Luisa, Fitness Coach. </li>
+            <li>Charlotte Smith, Fitness Coach. </li>
+            <li>Jane Smith, Yoga Instructor. </li>
+            <li>Michael T. , Strength Trainer.  </li>
+          </ul>
+        </div>
+      </div>
+      <h5><b>Success Stories </b></h5>
+      <p>Joining Fit Life Hub has been a game-changer for me! The trainers are incredibly knowledgeable and supportive. They helped me create a personalized workout plan and provided nutritional guidance that fit my lifestyle. I’ve seen significant improvements in my strength, endurance, and overall fitness level. I can’t recommend this program enough!” </p>
+      <p>I had been struggling with my weight for years until I found Your Fitness Program. The team not only helped me shed pounds but also taught me how to make healthier choices and maintain a balanced lifestyle. The workouts are challenging but fun, and the trainers genuinely care about your progress. Thanks to their guidance, I’ve achieved my weight loss goals and feel more confident and energetic than ever before!” – Samyferze</p>
+      <p>I used to dread going to the gym until I discovered [Your Fitness Program]. The group fitness classes are dynamic and engaging, making workouts enjoyable. The instructors are motivating and create a supportive environment. I’ve not only gained strength and endurance but also found a community of like-minded individuals who push me to be my best. It’s more than just a fitness program; it’s a lifestyle that I’m grateful to be a part of.” -Manish</p>
+      <p>After struggling with chronic pain, I decided to try to improve my overall health. The trainers took the time to understand my condition and tailored exercises to accommodate my needs. Their expertise in corrective exercises and injury prevention has been invaluable. I’ve experienced a significant reduction in pain, increased mobility, and a newfound sense of well-being. Thank you for helping me regain control of my health!” -Jason M. </p>
+    </div>
+   
+
+    
+
+
+    <!-- footer -->
+    <footer>
+        <div class="section-E">
+          <div class="join">
+            <h2>Join the Fit life hub</h2>
+            <p>Stay updated with our latest recipes and other news by joining our newsletter.</p>
+          </div>
+          <div class="email">
+            <input type="email" placeholder="Type Your email...">
+            <a href="contact.html"><button type="button" class="btn btn-outline-dark">Subscribe</button></a>
+          </div>
+        </div>
+        <div>
+          <h3>For More Informrmation, Click Here!</h3>
+          <div class="links p-3">
+            <i class="fa-brands fa-facebook text-primary fs-4 pe-3"></i>
+            <i class="fa-brands fa-square-whatsapp text-success fs-4 pe-3"></i>
+            <i class="fa-brands fa-square-instagram text-danger fs-4 pe-3"></i>
+            <i class="fa-brands fa-twitter text-primary fs-4 pe-3"></i>
+          </div> 
+        <div class="links">
+            <a href="workout.html"><button type="button" class="btn btn-outline-dark">Workouts</button></a>
+            <a href="nutrition.html"><button type="button" class="btn btn-outline-dark">Nutrition</button></a>
+            <a href="about.html"><button type="button" class="btn btn-outline-dark">About</button></a>
+            <a href="contact.html"><button type="button" class="btn btn-outline-dark">Contact Us</button></a>
+        </div>
+        </div>
+      </footer>
+  
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>    
